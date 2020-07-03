@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: repeat(5,1fr);
+            grid-column-gap: 50px;
+            grid-row-gap: 100px;
+            padding: 10px;
+
+        }
+        .grid-item{
+            border: 1px solid white;
+            border-radius: 5%;
+            padding: 10px;
+            font-size: 40px;
+            text-align: center;
+            color: white;
+            font-weight: bold;
+            align-items: center;
+        }
+        .items1{
+            grid-column-start: 1;
+            grid-column-end: 6;
+            height: 100px;
+            background-color:cornflowerblue;
+        }
+        .items2{
+            grid-row-start: 2;
+            grid-row-end: 3;
+            grid-column-start: 1;
+            grid-column-end: 2;
+            height: 400px;
+            background-color: cyan;
+        }
+        .items3{
+            
+            grid-row-start: 2;
+            grid-row-end: 3;
+            grid-column-start: 2;
+            grid-column-end: 5;
+            height: 400px;
+            background-color:darkcyan;
+
+        }
+        .items4{
+            grid-row-start: 2;
+            grid-row-end: 3;
+            grid-column-start: 5;
+            grid-column-end: 6;
+            height: 400px;
+            background-color: cyan;
+        }
+        .items5{
+            
+            grid-row-start: 3;
+            grid-row-end: 4;
+            grid-column-start: 1;
+            grid-column-end: 6;
+            height: 100px;
+            background-color: cornflowerblue;
+        }
+        .flex{
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="grid-item items1 flex"><p>header</p></div>
+        <div class="grid-item items2 flex"><p>asidebar</p></div>
+        <div class="grid-item items3 flex"><p>main-content</p></div>
+        <div class="grid-item items4 flex"><p>asidebar</p></div>
+        <div class="grid-item items5 flex"><p>main-content</p></div>
+    </div>
+</body>
+</html>
